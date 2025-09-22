@@ -11,6 +11,8 @@ const playerDataFeatcha = playerDataFeatch;
 function App() {
   const [togle, setTogle] = useState(true);
   const [balences, setBalences] = useState(6000000000);
+  const [clickPlyers, setClickPlyers] = useState([]);
+  console.log(clickPlyers);
 
   return (
     <>
@@ -48,10 +50,12 @@ function App() {
             playerDataFeatch={playerDataFeatcha}
             setBalences={setBalences}
             balences={balences}
+            clickPlyers={clickPlyers}
+            setClickPlyers={setClickPlyers}
           ></AbabolePlayer>
         </Suspense>
       ) : (
-        <SecleatPlayer></SecleatPlayer>
+        <SecleatPlayer clickPlyers={clickPlyers}></SecleatPlayer>
       )}
     </>
   );

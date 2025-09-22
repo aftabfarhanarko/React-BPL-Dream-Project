@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import flages from "../../assets/Group (1).png";
 import group from "../../assets/Group.png";
 
-const DisplayCard = ({ player, setBalences, balences }) => {
+const DisplayCard = ({ player, setBalences, balences, clickPlyers,setClickPlyers }) => {
   const [isSecelate, setIsSecelate] = useState(false);
   return (
     <div className="card bg-base-100  shadow-sm p-5">
@@ -47,6 +47,7 @@ const DisplayCard = ({ player, setBalences, balences }) => {
                   return;
                 }
                 setBalences(balences - player.price);
+                setClickPlyers([...clickPlyers,player])
               }}
               className="btn"
             >
