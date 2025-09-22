@@ -1,6 +1,10 @@
 import React from "react";
 
-const SecleatPlayer = ({ clickPlyers, removedSections }) => {
+const SecleatPlayer = ({
+  clickPlyers,
+  removedSections,
+  sectionsHeandel,
+}) => {
   return (
     <div className="max-w-[1100px] mx-auto  ">
       {clickPlyers.map((mys) => (
@@ -27,6 +31,14 @@ const SecleatPlayer = ({ clickPlyers, removedSections }) => {
           </div>
         </div>
       ))}
+      <button
+        onClick={sectionsHeandel}
+        className="
+            text-black font-semibold py-2 px-6 bg-[#E7FE29]  hover:bg-[#d8ed19]
+        rounded-lg shadow-md mt-5"
+      >
+        Add More Player
+      </button>
     </div>
   );
 };

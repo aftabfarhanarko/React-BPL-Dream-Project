@@ -6,7 +6,7 @@ import SecleatPlayer from "./Componitns/SecleatPlayer/SecleatPlayer";
 import Hero from "./Componitns/HeroSections/Hero";
 import Footer from "./Componitns/Footer/Footer";
 import Spiner from "./Componitns/LodingSpiner/Spiner";
-const playerDataFeatch = fetch("../public/Player.json").then((res) =>
+const playerDataFeatch = fetch("/Player.json").then((res) =>
   res.json()
 );
 const playerDataFeatcha = playerDataFeatch;
@@ -24,6 +24,9 @@ function App() {
     setBalences(balences + parseInt(paler.price));
   };
 
+  const sectionsHeandel = () => {
+    setTogle(true)
+  }
   return (
     <>
       <Navbar balences={balences}></Navbar>
@@ -69,7 +72,9 @@ function App() {
           <SecleatPlayer
             removedSections={removedSections}
             clickPlyers={clickPlyers}
+            sectionsHeandel={sectionsHeandel}
           ></SecleatPlayer>
+          
         )}
       </div>
 
