@@ -3,7 +3,7 @@ import navLogo from '../../assets/logo.png'
 import coins from '../../assets/Currency.png'
 const Navbar = () => {
   return (
-    <div className="navbar max-w-[1200px] mx-auto">
+    <div className="navbar max-w-[1100px] mx-auto border-b  border-gray-300 mb-3">
       <div className="flex-1">
         <a className=" btn-ghost text-xl">
           <img className="w-[70px] h-[60px]" src={navLogo}></img>

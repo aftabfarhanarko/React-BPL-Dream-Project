@@ -3,6 +3,7 @@ import "./App.css";
 import AbabolePlayer from "./Componitns/AbabolePlayer/AbabolePlayer";
 import Navbar from "./Componitns/Navbar/Navbar";
 import SecleatPlayer from "./Componitns/SecleatPlayer/SecleatPlayer";
+import Hero from "./Componitns/HeroSections/Hero";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
     <Navbar></Navbar>
+    <Hero></Hero>
 
  <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
      <AbabolePlayer 
