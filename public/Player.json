@@ -1,0 +1,152 @@
+[
+  {
+    "player-img": "https://i.ibb.co.com/VWS44TKs/imgae-1-Kohli-smiling-689593f776d0d.webp",
+    "player-name": "Virat Kohli",
+    "player-country": "India",
+    "player-role": "Batter",
+    "rating": 4.22,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm medium",
+    "price": "230000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/QFZPb6C7/PTI07-01-2024-000012-B-0-1720443879123-1720443893902.jpg",
+    "player-name": "Rohit Sharma",
+    "player-country": "India",
+    "player-role": "Batter",
+    "rating": 3.56,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm offbreak",
+    "price": "110000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/vNXcLpm/jasprit-bumrah-vs-pak1-1740298335.webp",
+    "player-name": "Jasprit Bumrah",
+    "player-country": "India",
+    "player-role": "Bowler",
+    "rating": 9.04,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm fast",
+    "price": "70000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/60zzvxC3/rishabh-pant-bcci-1-2024-04-43c0e1a5c9a4357873bbbb15d8f41990-16x9.jpg",
+    "player-name": "Rishabh Pant",
+    "player-country": "India",
+    "player-role": "Wicketkeeper-Batter",
+    "rating": 5.22,
+    "batting-style": "Left-hand bat",
+    "bowling-style": "N/A",
+    "price": "130000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/C3FDkCHs/shreyas-iyer-injury1-2024-03-dc931d8eaaf7bb08606a7975ddcb04bc-1200x675.jpg",
+    "player-name": "Shreyas Iyer",
+    "player-country": "India",
+    "player-role": "Batter",
+    "rating": 4.95,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Legbreak googly",
+    "price": "160000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/T3dGBPY/Britain-Cricket-England-New-Zealand-55-1694671939051-1694671959331.jpg",
+    "player-name": "Trent Boult",
+    "player-country": "New Zealand",
+    "player-role": "Bowler",
+    "rating": 9.39,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Left-arm fast-medium",
+    "price": "50000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/7JrM01J3/93cienn-josh-hazlewood-afp-625x300-16-February-22.webp",
+    "player-name": "Josh Hazlewood",
+    "player-country": "Australia",
+    "player-role": "Bowler",
+    "rating": 6.1,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm fast",
+    "price": "80000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/8DBSXtp2/I0-ATOk-J3p-Y.webp",
+    "player-name": "Phil Salt",
+    "player-country": "England",
+    "player-role": "Wicketkeeper-Batter",
+    "rating": 1.91,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "N/A",
+    "price": "170000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/Y4yV89wg/kl-rahul.webp",
+    "player-name": "KL Rahul",
+    "player-country": "India",
+    "player-role": "Wicketkeeper-Batter",
+    "rating": 2.34,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "N/A",
+    "price": "190000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/2HZBY1P/Ravindra-Jadeja-2.jpg",
+    "player-name": "Ravindra Jadeja",
+    "player-country": "India",
+    "player-role": "All-rounder",
+    "rating": 7.45,
+    "batting-style": "Left-hand bat",
+    "bowling-style": "Left-arm orthodox",
+    "price": "200000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/mChnYnmy/eqod4ll8-jos-buttler-vs-india-afp-625x300-10-November-22.webp",
+    "player-name": "Jos Buttler",
+    "player-country": "England",
+    "player-role": "Wicketkeeper-Batter",
+    "rating": 8.6,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "N/A",
+    "price": "60000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/XxYb1HMV/hardik-pandya-310441455-16x9.jpg",
+    "player-name": "Hardik Pandya",
+    "player-country": "India",
+    "player-role": "All-rounder",
+    "rating": 4.4,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm fast-medium",
+    "price": "340000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/QvySWtxC/614248-Copy-of-Lead-image-2023-10-16-T183028-066.webp",
+    "player-name": "Kagiso Rabada",
+    "player-country": "South Africa",
+    "player-role": "Bowler",
+    "rating": 3.35,
+    "batting-style": "Left-hand bat",
+    "bowling-style": "Right-arm fast",
+    "price": "260000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/zh2VShXd/343568.jpg",
+    "player-name": "Suryakumar Yadav",
+    "player-country": "India",
+    "player-role": "Batter",
+    "rating": 1.33,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Right-arm offbreak",
+    "price": "330000000"
+  },
+  {
+    "player-img": "https://i.ibb.co.com/qL72cxhW/8mvq5v38-rashid-khan-625x300-26-June-24.webp",
+    "player-name": "Rashid Khan",
+    "player-country": "Afghanistan",
+    "player-role": "Bowler",
+    "rating": 2.66,
+    "batting-style": "Right-hand bat",
+    "bowling-style": "Legbreak googly",
+    "price": "270000000"
+  }
+]
