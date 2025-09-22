@@ -1,7 +1,7 @@
 import React from "react";
-import navLogo from '../../assets/logo.png'
-import coins from '../../assets/Currency.png'
-const Navbar = ({balences}) => {
+import navLogo from "../../assets/logo.png";
+import coins from "../../assets/Currency.png";
+const Navbar = ({ balences }) => {
   return (
     <div className="navbar max-w-[1100px] mx-auto border-b  border-gray-300 mb-3">
       <div className="flex-1">
@@ -10,8 +10,8 @@ const Navbar = ({balences}) => {
         </a>
       </div>
       <div className="flex items-center">
-        <span className="mr-1">{balences}</span>
-        <span className="mr-1">Coin</span>
+        <span className="mr-1 text-xl font-semibold">{balences}</span>
+        <span className="mr-1 text-xl font-semibold">Coin</span>
         <img src={coins}></img>
       </div>
     </div>

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import flages from "../../assets/Group (1).png";
 import group from "../../assets/Group.png";
 
-const DisplayCard = ({ player,setBalences }) => {
-    const [isSecelate , setIsSecelate] = useState(false);
+const DisplayCard = ({ player, setBalences, balences }) => {
+  const [isSecelate, setIsSecelate] = useState(false);
   return (
     <div className="card bg-base-100  shadow-sm p-5">
       <figure>
@@ -38,7 +38,20 @@ const DisplayCard = ({ player,setBalences }) => {
           </div>
           <div className="flex justify-between items-center mt-2">
             <p className="font-bold">Price: ${player.price}</p>
-            <button disabled={isSecelate} onClick={() => setIsSecelate(true)} className="btn">{isSecelate ? "Secelate" : "Choose Player" }</button>
+            <button
+              disabled={isSecelate}
+              onClick={() => {
+                setIsSecelate(true);
+                if (balences < player.price) {
+                  alert("Not Avable Balince");
+                  return;
+                }
+                setBalences(balences - player.price);
+              }}
+              className="btn"
+            >
+              {isSecelate ? "Secelate" : "Choose Player"}
+            </button>
           </div>
         </div>
       </div>
