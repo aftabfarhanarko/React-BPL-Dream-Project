@@ -33,7 +33,7 @@ function App() {
       <Hero></Hero>
 
       <div className="flex justify-between max-w-[1100px] mx-auto mt-5 mb-4 items-center">
-        <h1 className=" text-[16px] md:text-xl font-semibold ">
+        <h1 className=" text-[14px] md:text-xl font-semibold ">
           {togle
             ? "Available Players"
             : `Selected Player (${clickPlyers.length}/15)`}
