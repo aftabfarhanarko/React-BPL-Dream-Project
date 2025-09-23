@@ -7,6 +7,7 @@ const AbabolePlayer = ({
   balences,
   clickPlyers,
   setClickPlyers,
+  setLocalStorageinClick
 }) => {
   const playerUseFatch = use(playerDataFeatch);
   return (
@@ -18,6 +19,7 @@ const AbabolePlayer = ({
           balences={balences}
           clickPlyers={clickPlyers}
           setClickPlyers={setClickPlyers}
+          setLocalStorageinClick={setLocalStorageinClick}
         ></DisplayCard>
       ))}
     </div>

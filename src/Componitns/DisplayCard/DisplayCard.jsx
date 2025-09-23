@@ -8,6 +8,7 @@ const DisplayCard = ({
   balences,
   clickPlyers,
   setClickPlyers,
+  setLocalStorageinClick
 }) => {
   const [isSecelate, setIsSecelate] = useState(false);
   return (
@@ -54,6 +55,7 @@ const DisplayCard = ({
                 }
                 setBalences(balences - player.price);
                 setClickPlyers([...clickPlyers, player]);
+                setLocalStorageinClick(player)
               }}
               className="btn"
             >

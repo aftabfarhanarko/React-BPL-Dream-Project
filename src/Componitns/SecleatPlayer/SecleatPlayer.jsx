@@ -2,13 +2,13 @@ import React from "react";
 
 const SecleatPlayer = ({
   clickPlyers,
-  removedSections,
+ removedLocalSt,
   sectionsHeandel,
 }) => {
   return (
     <div className="max-w-[1100px] mx-auto  ">
       {clickPlyers.map((mys) => (
-        <div className="border border-gray-300 flex justify-between items-center mb-3 p-3 px-4 rounded-xl">
+        <div  className="border border-gray-300 flex justify-between items-center mb-3 p-3 px-4 rounded-xl">
           <div className="flex gap-4 items-center">
             <div>
               <img
@@ -25,7 +25,7 @@ const SecleatPlayer = ({
           </div>
           <div>
             <img
-              onClick={() => removedSections(mys)}
+              onClick={() =>{removedLocalSt(mys)} }
               src="https://i.ibb.co.com/v6fNkN2P/Vector.png"
             ></img>
           </div>

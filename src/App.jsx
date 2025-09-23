@@ -1,4 +1,4 @@
-import { Suspense, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import "./App.css";
 import AbabolePlayer from "./Componitns/AbabolePlayer/AbabolePlayer";
 import Navbar from "./Componitns/Navbar/Navbar";
@@ -6,6 +6,7 @@ import SecleatPlayer from "./Componitns/SecleatPlayer/SecleatPlayer";
 import Hero from "./Componitns/HeroSections/Hero";
 import Footer from "./Componitns/Footer/Footer";
 import Spiner from "./Componitns/LodingSpiner/Spiner";
+import { getLS, remopvedLS, setLS } from "./Componitns/LocalStors/Vanila";
 const playerDataFeatch = fetch("/Player.json").then((res) =>
   res.json()
 );
@@ -14,15 +15,25 @@ function App() {
   const [togle, setTogle] = useState(true);
   const [balences, setBalences] = useState(6000000000);
   const [clickPlyers, setClickPlyers] = useState([]);
-
-  const removedSections = (paler) => {
-    const filters = clickPlyers.filter(
-      (deleat) => deleat["player-name"] !== paler["player-name"]
-    );
-    console.log(filters);
-    setClickPlyers(filters);
-    setBalences(balences + parseInt(paler.price));
+   
+  useEffect(() => {
+   const items = getLS();
+   setClickPlyers(items);
+  }, [])
+console.log(clickPlyers)
+  const setLocalStorageinClick = (paler) => {
+   const newArray = [...clickPlyers,paler];
+   setClickPlyers(newArray);
+   setLS(paler)
+   
   };
+
+  const removedLocalSt = (dlet) => {
+    console.log("Dleat Buttons",dlet );
+    const filterLS = clickPlyers.filter(name => name["player-name"] !== dlet["player-name"]);
+    setClickPlyers(filterLS);
+    remopvedLS(dlet);
+  }
 
   const sectionsHeandel = () => {
     setTogle(true)
@@ -66,13 +77,14 @@ function App() {
               balences={balences}
               clickPlyers={clickPlyers}
               setClickPlyers={setClickPlyers}
+              setLocalStorageinClick={setLocalStorageinClick}
             ></AbabolePlayer>
           </Suspense>
         ) : (
           <SecleatPlayer
-            removedSections={removedSections}
             clickPlyers={clickPlyers}
             sectionsHeandel={sectionsHeandel}
+            removedLocalSt={removedLocalSt}
           ></SecleatPlayer>
           
         )}
@@ -84,3 +96,10 @@ function App() {
 }
 
 export default App;
+
+//     const filters = clickPlyers.filter(
+    //   (deleat) => deleat["player-name"] !== paler["player-name"]
+    // );
+    // console.log(filters);
+    // setClickPlyers(filters);
+    // setBalences(balences + parseInt(paler.price));

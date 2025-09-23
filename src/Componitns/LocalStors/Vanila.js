@@ -14,6 +14,12 @@ const stteas = (para) =>{
     localStorage.setItem("cart", convt);
 }
 
+const remopvedLS = id => {
+  const gets = getLS();
+  const reminng = gets.filter(element => element["player-name"] !== id["player-name"]);
+  stteas(reminng);
+}
+
 
 const setLS = (id) =>{
     const gets = getLS();
@@ -21,4 +27,4 @@ const setLS = (id) =>{
     stteas(newAdd);
 }
 
-export{getLS, setLS}
+export{getLS, setLS,remopvedLS}
