@@ -44,8 +44,8 @@ function App() {
       <Navbar balences={balences}></Navbar>
       <Hero></Hero>
 
-      <div className="flex justify-between max-w-[1100px] mx-auto mt-5 mb-4 items-center">
-        <h1 className=" text-[14px] md:text-xl font-semibold ">
+      <div className="flex justify-between max-w-[1100px] mx-auto mt-5 mb-4 items-center  px-2 md:px-0">
+        <h1 className=" text-[15px] md:text-xl font-semibold ">
           {togle
             ? "Available Players"
             : `Selected Player (${clickPlyers.length}/15)`}
@@ -54,16 +54,16 @@ function App() {
           <button
             onClick={() => setTogle(true)}
             className={`${togle ? "bg-[#E7FE29]  hover:bg-[#d8ed19]" : ""}
-            text-black font-semibold py-2  px-3 
-            rounded-l-lg shadow-md`}
+            text-black font-semibold py-2 md:py-2  px-3 
+            rounded-l-lg shadow-md text-[14px] md:text-[15px]` }
           >
             Available
           </button>
           <button
             onClick={() => setTogle(false)}
             className={`${togle ? "" : "bg-[#E7FE29]  hover:bg-[#d8ed19]"}
-            text-black font-semibold py-2 px-3 
-            rounded-r-lg shadow-md`}
+            text-black font-semibold  py-2 md:py-2 px-3 
+            rounded-r-lg shadow-md text-[14px] md:text-[15px]`}
           >
             Selected (<span>{clickPlyers.length}</span>)
           </button>
