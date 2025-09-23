@@ -8,7 +8,7 @@ const Footer = () => {
         <div >
             <img className="flex mx-auto" src={bgimg}></img>
         </div>
-      <footer className="footer text-base-content p-10 flex flex-col md:flex-row justify-between max-w-[1100px] mx-auto">
+      <footer className="footer px-5 text-base-content p-10 flex flex-col md:flex-row justify-between max-w-[1100px] mx-auto">
         <div className="text-white">
           <h5 className="footer-title">About Us</h5>
           <p className="max-w-[200px]">
@@ -26,13 +26,13 @@ const Footer = () => {
 
         <form className="text-white">
           <h6 className="footer-title">Subscribe</h6>
-          <p>Subscribe to our newsletter for the latest updates.</p>
+          <p className="max-w-[220px] md:max-w-full">Subscribe to our newsletter for the latest updates.</p>
           <fieldset className="w-80">
             <div className="join">
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="input input-bordered join-item rounded-l-lg"
+                className="input input-bordered join-item rounded-l-lg  max-w-[200px] md:max-w-full"
               />
               <button className="btn bg-gradient-to-r from-pink-400 via-orange-300 to-yellow-300 join-item text-black font-semibold rounded-r-lg">
                 Subscribe
