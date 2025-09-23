@@ -7,37 +7,38 @@ import Hero from "./Componitns/HeroSections/Hero";
 import Footer from "./Componitns/Footer/Footer";
 import Spiner from "./Componitns/LodingSpiner/Spiner";
 import { getLS, remopvedLS, setLS } from "./Componitns/LocalStors/Vanila";
-const playerDataFeatch = fetch("/Player.json").then((res) =>
-  res.json()
-);
-const playerDataFeatcha = playerDataFeatch;
+
+const fetchData = async () => {
+  const data = await fetch("/Player.json");
+  const json = await data.json();
+  return json;
+};
+const playerDataFeatcha = fetchData();
+
 function App() {
   const [togle, setTogle] = useState(true);
   const [balences, setBalences] = useState(6000000000);
   const [clickPlyers, setClickPlyers] = useState([]);
-   
+
   useEffect(() => {
-   const items = getLS();
-   setClickPlyers(items);
-  }, [])
-console.log(clickPlyers)
+    const items = getLS();
+    setClickPlyers(items);
+  }, []);
+
   const setLocalStorageinClick = (paler) => {
-   const newArray = [...clickPlyers,paler];
-   setClickPlyers(newArray);
-   setLS(paler)
-   
+    const newArray = [...clickPlyers, paler];
+    setClickPlyers(newArray);
+    setLS(paler);
   };
 
   const removedLocalSt = (dlet) => {
-    console.log("Dleat Buttons",dlet );
-    const filterLS = clickPlyers.filter(name => name["player-name"] !== dlet["player-name"]);
+    const filterLS = clickPlyers.filter(
+      (name) => name["player-name"] !== dlet["player-name"]
+    );
     setClickPlyers(filterLS);
     remopvedLS(dlet);
-  }
-
-  const sectionsHeandel = () => {
-    setTogle(true)
-  }
+    setBalences(balences + parseInt(dlet.price));
+  };
   return (
     <>
       <Navbar balences={balences}></Navbar>
@@ -83,10 +84,9 @@ console.log(clickPlyers)
         ) : (
           <SecleatPlayer
             clickPlyers={clickPlyers}
-            sectionsHeandel={sectionsHeandel}
+            sectionsHeandel={setTogle}
             removedLocalSt={removedLocalSt}
           ></SecleatPlayer>
-          
         )}
       </div>
 
@@ -96,10 +96,3 @@ console.log(clickPlyers)
 }
 
 export default App;
-
-//     const filters = clickPlyers.filter(
-    //   (deleat) => deleat["player-name"] !== paler["player-name"]
-    // );
-    // console.log(filters);
-    // setClickPlyers(filters);
-    // setBalences(balences + parseInt(paler.price));

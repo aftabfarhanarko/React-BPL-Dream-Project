@@ -32,7 +32,7 @@ const SecleatPlayer = ({
         </div>
       ))}
       <button
-        onClick={sectionsHeandel}
+        onClick={()=> sectionsHeandel(true)}
         className="
             text-black font-semibold py-2 px-6 bg-[#E7FE29]  hover:bg-[#d8ed19]
         rounded-lg shadow-md mt-5"
